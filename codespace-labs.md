@@ -338,6 +338,7 @@ write a function to seed a random number generator
 ```
 Is the Seed function deprecated in Go?
 ```
+![Copilot response on deprecation](./images/cdd79.png?raw=true "Copilot response on deprecation") 
 
 5. Copilot probably responded with no and some info about the function. So one way we can help Copilot understand language updates is by providing the context in our file. So let's start again. Delete the current content in the explore.go file.
 
