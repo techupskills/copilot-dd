@@ -28,16 +28,16 @@
    
 5. Hit return and Copilot will generate another part of the function.  Hit tab to accept it. Continue until you get a complete function. One example of what code may look like is below.
 
-![Copilot generated function](./images/cdd2.png?raw=true "Copilot generated function")
+![Copilot generated function](./images/cdd2b.png?raw=true "Copilot generated function")
    
 6. This prompt is not specific enough for Copilot to interpret what we want to do.  Highlight the code and delete it, so we can try again.
 
 7. Now type a comment at the top that says
 
 ```
-// function to parse url
+// parse URL from a string
 ```
-8. Hit enter and you will probably see a similar line to
+8. Hit enter and you may see a comment referencing some example code. Use Tab to accept that line and hit enter again. You will probably see a similar line to
 
 ```
 function parseURL(url) {
@@ -52,11 +52,11 @@ function parseURL(url) {
 
 10. Only if needed, hit return and Copilot should start generating suggestions again. You can just hit tab to accept each line and then return to get the next part of the code until the function is complete. You may get some blank lines along the way - just hit return until you get to the end of a function. (You will be at the end when the indentation is done.  Also Copilot may start to suggest another function in comments like // test...)
 
-11. Suppose you're not happy with that suggestion. Copilot can provide other options for the code. To see those, make sure you are in the editor for the file and hit **Ctrl + Enter**. A second window will open up with other suggestions.
-Be patient - it takes a bit of time for Copilot to generate alternative suggestions. After a moment though, you will have up to 10 alternatives to pick from.
-You can scan through these and then pick a different one if you want by clicking on the "Accept Solution" button under the alternative suggestion.  Note that this will add the code to the existing set, so you may want to delete the other code first.
+11. Suppose you're not happy with that suggestion. Copilot can provide other options for the code (that may or may not be useful). To see those, make sure you are in the editor for the file, highlight the existing code, and hit **Ctrl + Enter**. A second window will open up with other suggestions.
+Be patient - it takes a bit of time for Copilot to generate alternative suggestions. After a moment though, you will have other suggested code to choose from. Note that some of this may be for implementations in other languages or testing code. 
+You can scan through these and then pick a different one if you want by clicking on the "Accept Suggestion" button under the alternative suggestion.  Note that this will add the code to the existing set, so you may want to delete the other code first.
 
-![alternative suggestions](./images/cdd4.png?raw=true "alternative suggestions")   
+![alternative suggestions](./images/cdd4b.png?raw=true "alternative suggestions")   
 
 12. Let's do one more pass at getting a specific prompt for Copilot. Delete all the code currently in index.js. This time we will not enter a comment, but will enter a specific funtion name.
 Type the following in the empty file.  Do not hit tab or return yet.
@@ -91,7 +91,7 @@ def is_prime(n
 
 4. Highlight the text and hit **Ctrl+Enter** to see options
 
-5. Pick one of the options that is longer and/or more complex (if there is one) and **Accept Solution**. If there's not one that's longer/more complex, just pick an alternative one and **Accept Solution**.
+5. Pick one of the options that is longer and/or more complex (if there is one) and **Accept Suggestion**. If there's not one that's longer/more complex, just leave the one you've got in the editor.
 
 ![alternative suggestions](./images/cdd34b.png?raw=true "alternative suggestions") 
 
@@ -100,7 +100,7 @@ def is_prime(n
 /simplify
 ```
 
-![simplifying via chat box](./images/cdd35.png?raw=true "simplifying via chat box") 
+![simplifying via chat box](./images/cdd35b.png?raw=true "simplifying via chat box") 
 
 7. Hover over the simplified text and tell Copilot to insert the suggestion at the cursor to replace the text that's currently there.
 
@@ -108,9 +108,9 @@ def is_prime(n
 
 8. Now, let's introduce an error into the code to see how Copilot can fix it. Pick an instance of a variable name and change it to one that doesn't exist. For example, change an instance of "n" to "x". 
 
-![introduce error](./images/cdd37b.png?raw=true "introduce error")   
+![introduce error](./images/cdd37c.png?raw=true "introduce error")   
 
-9. Notice the light bulb icon that has popped up. Click on that, scroll to the bottom (if needed), and you'll have additional options to fix or explain with Copilot.
+9. Notice the light bulb icon that has popped up. (If you don't see it, highlight the "x".) Click on that, scroll to the bottom (if needed), and you'll have additional options to fix or explain with Copilot.
 
 ![Copilot options inline](./images/cdd38b.png?raw=true "Copilot options inline")   
 
@@ -118,7 +118,7 @@ def is_prime(n
 
 11. After a few moments, it will propose a fix that you can just accept (via the Accept button).
 
-![Fixing with Copilot](./images/cdd39b.png?raw=true "Fixing with Copilot")       
+![Fixing with Copilot](./images/cdd39c.png?raw=true "Fixing with Copilot")       
 
 12. (Optional) If you'd like, you can go back and make the error again, highlight the code, and then use the /fix command in the chat window to get the same results.
 
@@ -132,15 +132,15 @@ def is_prime(n
 
 1. Now that we have some code to work with, let's see what else Copilot can do for us. Let's have it explain the current code in our *prime.py* file.  Select the code. Then, use the **Cmd+I** keys to bring up the Copilot interactive chat dialog.
 
-![Interactively telling Copilot to explain code](./images/cdd40b.png?raw=true "Interactively telling Copilot to explain code")
+![Interactively telling Copilot to explain code](./images/cdd40c.png?raw=true "Interactively telling Copilot to explain code")
 
 
-2. Tell Copilot to explain the code by typing the command below in the dialog. (Note, the actual word may not show up after you type.) Hit Enter. Then, you should see the output in the chat window.
+2. Tell Copilot to explain the code by typing the command below in the dialog. Hit Enter. Then, you should see the output in the *chat* window.
 
 ```
 /explain
 ```
-![Output of interactively telling Copilot to explain code](./images/cdd41b.png?raw=true "Output of interactively telling Copilot to explain code")
+![Output of interactively telling Copilot to explain code](./images/cdd41c.png?raw=true "Output of interactively telling Copilot to explain code")
 
 3. Now, let's do the same request but through a comment. In the *prime.py* file, below the code, enter the following comment and hit Enter.
 ```
@@ -148,7 +148,7 @@ def is_prime(n
 ```
 4. After this, Copilot should start showing the explanation in comments. Just hit tab to accept each line and then Enter to move to the next one.
 
-![Output of telling Copilot to explain code via comment](./images/cdd42b.png?raw=true "Output of telling Copilot to explain code via comment")
+![Output of telling Copilot to explain code via comment](./images/cdd42c.png?raw=true "Output of telling Copilot to explain code via comment")
 
 5. We can also query Copilot inline via asking a question in a comment. Delete the commented explanation and try out the question below. To be clear you can prefix it with :q but that is not required with the chat feature installed.
 
@@ -156,17 +156,17 @@ def is_prime(n
 # q: what does the function above do?
 ```
 
-![Prompting for what code does with q:](./images/cdd43b.png?raw=true "Prompting for what code does with q:")
+![Prompting for what code does with q:](./images/cdd43c.png?raw=true "Prompting for what code does with q:")
 
 6. Finally, let's see how to use the doc feature to automatically document our code. Highlight the actual code.
 
 7. Now, enter **Cmd+I** and enter the **/doc** command. After a few moments, Copilot should generate some documentation for the code. Do not Accept or Discard yet.
 
-![Generated doc for the code](./images/cdd44b.png?raw=true "Generated doc for the code")  
+![Generated doc for the code](./images/cdd44c.png?raw=true "Generated doc for the code")  
 
 8. Let's see what other doc could be generated. Click on the circular arrow button next to Discard at the bottom of the dialog and click on it to regenerate another possible doc.
 
-![Regenerating doc](./images/cdd45b.png?raw=true "Regenerating doc")  
+![Regenerating doc](./images/cdd45c.png?raw=true "Regenerating doc")  
 
 9. Once you find a doc example you like, go ahead and click **Accept**.
 
@@ -190,7 +190,7 @@ def is_prime(n
 ```
 def test_is_prime():
 ```
-![generating tests via comment](./images/cdd46.png?raw=true "generating tests via comment") 
+![generating tests via comment](./images/cdd46b.png?raw=true "generating tests via comment") 
 
 4. Let's try a slightly different way of generating tests.  First, highlight and delete any parts of the current test function, including comments.
 
@@ -205,9 +205,9 @@ def test_is_prime():
 
 7. We could put this into a new file by hovering over the output in the Chat window, then selecting the "..." from the pop-up menu and selecting "Insert into new file".  Go ahead and select that option and then you'll have a new file in your editor with the code that you can save as needed.
 
-![Insert tests into new file](./images/cdd50.png?raw=true "Insert tests into new file") 
+![Insert tests into new file](./images/cdd50c.png?raw=true "Insert tests into new file") 
 
-![Saved generated unit tests file](./images/cdd50b-4.png?raw=true "Saved generated unit tests file") 
+![Saved generated unit tests file](./images/cdd50d.png?raw=true "Saved generated unit tests file") 
 
 
 <p align="center">
