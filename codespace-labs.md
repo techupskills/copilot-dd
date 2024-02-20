@@ -356,9 +356,11 @@ Is the Seed function deprecated in Go?
 write a function to seed a random number generator
 ```
 
-8. This time, the code should be using the same format and NewSource function as you put in the file in step 6. You can just Accept the change.
+8. This time, the code should be using the same format and NewSource function as you put in the file in step 6. If so, you can just Accept the change. If not, you may have to click on the **Regenerate** button (circular arrow) to get to the next set of code.
 
 ![Updated random number gen code after including updated usage](./images/cdd54.png?raw=true "Updated random number gen code after including updated usage")
+
+![Regenerate random number gen code after including updated usage](./images/cdd80.png?raw=true "Regenerate random number gen code after including updated usage")
 
 <p align="center">
 **[END OF LAB]**
@@ -386,7 +388,7 @@ add label type: front-end
 3. After a few moments, you should see it respond with the code. You can just Accept this.
 ![Kubernetes manifest](./images/cdd57.png?raw=true "Kubernetes manifest")
 
-4. Suppose we don't know how to execute this code. Let's ask Copilot. Highlight the generated YAML in the deployment.yaml file.  Then go to the larger Chat interface and ask it. Put the following in the Chat interface.
+4. Suppose we don't know how to execute this code. Let's ask Copilot. With the file open and selected in the editor, go to the larger Chat interface and ask it. Put the following in the Chat interface.
 
 ```
 How do I execute this - short version?
@@ -394,7 +396,7 @@ How do I execute this - short version?
 
 5. Copilot should respond with something like the following:
 
-![How to execute deployment](./images/cdd58.png?raw=true "How to execute deployment")
+![How to execute deployment](./images/cdd81.png?raw=true "How to execute deployment")
 
 
 6. While we're in the Chat interface, let's ask it for the latest K8s version. Put the following into the dialog.
@@ -405,7 +407,7 @@ what is the latest Kubernetes version?
 
 7. Notice that it identifies the latest version as 1.22 as of September 2021. This highlights the out-of-date issue with the LLM.
 
-![Answer to latest K8s version](./images/cdd59.png?raw=true "Answer to latest K8s version")
+![Answer to latest K8s version](./images/cdd82.png?raw=true "Answer to latest K8s version")
 
 
 8. Let's have Copilot generate some code to work with Kubernetes through the API. In the chat interface, enter the following.
@@ -416,7 +418,7 @@ How do I call the K8s API for scaling a deployment to 5 replicas with Python?
 
 9. Click in chat output and paste to new file via clicking on the "..." menu option.
 
-![Add code to new file](./images/cdd60.png?raw=true "Add code to new file")
+![Add code to new file](./images/cdd83.png?raw=true "Add code to new file")
 
 
 10. Suppose we change our mind and want to convert this code to Go. Click in the new file, and highlight the new code. Then, in the Chat interface tell it to translate to Go.
@@ -427,7 +429,7 @@ translate to Go
 
 11. If you look at the output from the Chat interface, you should not how the equivalent Go code available.
 
-![Go translation](./images/cdd61.png?raw=true "Go translation")
+![Go translation](./images/cdd84.png?raw=true "Go translation")
 
 <p align="center">
 **[END OF LAB]**
