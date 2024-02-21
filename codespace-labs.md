@@ -445,7 +445,7 @@ translate to Go
 code contact.js
 ```
 
-2. Prompt Copilot to create a function with a regular expression to validate a US phone number. You can use the **CMD+I** interface.
+2. Prompt Copilot to create a function with a regular expression to validate a US phone number. You can use the **CMD+I** interface and Accept the results.
 ```
 create a function to validate any global phone number using a regular expression
 ```
@@ -455,19 +455,19 @@ create a function to validate any global phone number using a regular expression
 
 ![Automatic doc of function](./images/cdd63.png?raw=true "Automatic doc of function")  
 
-4. Now let's see how Copilot can generate some data and mappings for us automatically. Enter the prompt below in the main Chat text entry area.
+4. Now let's see how Copilot can generate some data and mappings for us automatically. Use the **CMD+I** functionality and insert the following prompt:
 ```
 create a mapping of states to area codes
 the key is the state abbreviation
 the value is an array of area codes
 ```
-5. After running this, Copilot will generate the start of a list as shown below. Hover over the output area and click to insert the updates at the cursor in the *phone.js* file. (This assumes the cursor is below the previous function in the file.)
+5. After running this, Copilot will generate the start of a list as shown below. Let's keep this result, but put it in another file.  Click on the drop-down arrow in the right-hand side of the **Discard** button and select the **Discard to New File** option. 
 
-![Automatic gen of data](./images/cdd65.png?raw=true "Automatic gen of data") 
+![Automatic gen of data](./images/cdd85.png?raw=true "Automatic gen of data") 
 
 6. Notice that the example mapping was only for the first few states. We want to get the remaining mappings for the other states.
 
-![Partial list of mappings](./images/cdd66.png?raw=true "Partial list of mappings") 
+![Partial list of mappings](./images/cdd86.png?raw=true "Partial list of mappings") 
 
 7. Let's craft a prompt to complete the sequence. Enter the following in the main Copilot Chat entry box and then execute it.
 
